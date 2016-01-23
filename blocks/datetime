@@ -1,7 +1,10 @@
 #!/bin/bash
 
-FORMAT="${BLOCK_INSTANCE:-%H:%M}"
-DATETIME=$(date "+${FORMAT}")
+if [ -n "$BLOCK_BUTTON" ];then gsimplecal&
+fi
+
+FORMAT="${BLOCK_INSTANCE:-%A, %d %B %Y | %H:%M}"
+DATETIME=$(LC_TIME="el_GR.UTF-8" date "+${FORMAT}")
 
 echo "${DATETIME}"
 echo "${DATETIME}"
