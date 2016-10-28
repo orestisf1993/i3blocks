@@ -1,6 +1,6 @@
 #!/bin/bash
 
-KEYMAP_NAME=$(xkblang -s)
+KEYMAP_NAME=$(xkb-switch -w -p)
 
 if [[ "${KEYMAP_NAME}" ]]; then
   echo "${KEYMAP_NAME}"
