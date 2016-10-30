@@ -1,9 +1,0 @@
-#!/bin/bash
-
-KEYMAP_NAME=$(xkb-switch -w -p)
-
-if [[ "${KEYMAP_NAME}" ]]; then
-  echo "${KEYMAP_NAME}"
-  echo "${KEYMAP_NAME}"
-  echo ""
-fi
