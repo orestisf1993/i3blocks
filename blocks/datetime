@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [ -n "$BLOCK_BUTTON" ]; then
-  gsimplecal &
+  LC_TIME="el_GR.UTF-8" gsimplecal &
 fi
 
 FORMAT="${BLOCK_INSTANCE:-%A, %d %B %Y | %H:%M}"
