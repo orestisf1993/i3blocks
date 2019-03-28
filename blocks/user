@@ -1,8 +1,6 @@
 #!/usr/bin/bash
 
 echo "${USER}"
-echo "${USER}"
-echo ""
 
 if [[ $(id -u) -eq 0 ]]; then
   exit 33
